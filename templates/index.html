@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>NearestMe</title>
+</head>
+<body>
+    <!-- Application Container -->
+    <div class="container">
+        <!-- <img src="../static/Original on Transparent logo.png" alt="cpalmer-atx" class="logo"> -->
+
+        <!-- Application Header -->
+        <div class="title">
+            <h1>NearestMe</h1>
+            <h5>A really lousy destination finder!</h5>
+        </div>
+        
+        <!-- Application Form -->
+        <form action="/submit" method="POST">
+
+            <!-- Address entrypoint -->
+            <div class="form-group">
+                <h3>Enter your address:</h3>
+                <input 
+                    type="text"
+                    name="address"
+                    placeholder="Enter address here"
+                />
+            </div>
+            
+            <!-- Destination type -->
+            <div class="form-group">
+                <h3>Preferred destination:</h3>
+                <select name="destination">
+                    <option value="">Select Destination</option>
+                    <option value="Gas Station">Gas Station</option>
+                    <option value="Coffee">Coffee</option>
+                    <option value="Park">Park</option>
+                </select>    
+            </div>
+
+            <!-- Results display box -->
+            <div class="form-group">
+                <h3>Here is what was found nearest to you:</h3>
+                <textarea 
+                name="results" 
+                id="" 
+                cols="30" 
+                rows="10"
+                placeholder="Results will be displayed here"
+                ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit" class="btn" />
+        </form>
+    </div>
+</body>
+</html>
