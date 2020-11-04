@@ -44,13 +44,16 @@
             <!-- Results display box -->
             <div class="form-group">
                 <h3>Here is what was found nearest to you:</h3>
-                <textarea 
+                <!-- <textarea 
                 name="results" 
                 id="" 
                 cols="30" 
                 rows="10"
                 placeholder="Results will be displayed here"
-                ></textarea>
+                ></textarea> -->
+                {% if message %}
+                    <p class="message">{{ message | safe }}</p>
+                {% endif %}
             </div>
 
             <!-- Submit Button -->
